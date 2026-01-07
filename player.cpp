@@ -4,8 +4,8 @@
 void Player :: move() {
 	int y{ (int) (IsKeyDown(KEY_S) - IsKeyDown(KEY_W))};
 	int x{ (int) (IsKeyDown(KEY_D) - IsKeyDown(KEY_A))};
-	pos.y += y * speedBoost() * delta;
-	pos.x += x * speedBoost() * delta;
+	pos.y += y * speedBoost() * DELTA;
+	pos.x += x * speedBoost() * DELTA;
 }
 
 float Player :: speedBoost() const {
@@ -20,4 +20,5 @@ float Player :: speedBoost() const {
 void Player :: update() {
 	move();
 	speedBoost();
+
 }
