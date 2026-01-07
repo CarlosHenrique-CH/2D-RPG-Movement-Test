@@ -1,7 +1,7 @@
 #pragma once
 #include "raylib.h"
 #include "config.h"
-#define delta GetFrameTime()
+#define DELTA GetFrameTime()
 
 class Player {
 public:
@@ -14,4 +14,5 @@ public:
 	void move();
 	void update();
 	
+
 };
