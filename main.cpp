@@ -19,7 +19,6 @@ int main() {
 
 		DrawText("\"My first ever raylib application!!\" \n - carlos, the terrible.", 20, 20, 20, LIGHTGRAY);
 		DrawText(TextFormat("Position: (%.2f, %.2f)", p.pos.x, p.pos.y), 20, 75, 20, RAYWHITE);
-		
 
 		EndDrawing();
 
@@ -28,4 +27,5 @@ int main() {
 	CloseWindow();
 
 	return 0;
+
 }
